@@ -57,8 +57,9 @@ class panel extends JPanel {
         
         //left eye fold
         gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
-        gp.moveTo(371.69, 263.83);
-        gp.quadTo(357.97, 240.38, 332.78, 261.75);
+        gp.moveTo(371.69, 258.83);
+        gp.quadTo(357.97, 243.38, 332.78, 258.75);
+        gg.setStroke(new BasicStroke(5));
         gg.setColor(Color.BLACK);
         gg.draw(gp);
         
@@ -68,7 +69,17 @@ class panel extends JPanel {
         gp.quadTo(338.86, 275.29, 361.27, 271.47);
         gp.curveTo(372.90, 271.30, 362.14, 277.20, 349.98, 278.25);
         gp.curveTo(327.57, 273.90, 334.17, 265.91, 337.99, 268.17);
+        gg.setStroke(new BasicStroke(1));
         gg.setColor(Color.black);
+        gg.fill(gp);
+        
+        //left eyeball
+        gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
+        gp.moveTo(345.95,257.47);
+        gp.quadTo(343.69, 261.13, 345.95, 264.04);
+        gp.lineTo(359.96, 265.45);
+        gp.quadTo(363.29, 260.38, 360.93, 258.01);
+        gp.curveTo(356.62, 253.85, 348, 253.82, 345.95, 257.47);
         gg.fill(gp);
         
         //right inner eye
@@ -92,7 +103,28 @@ class panel extends JPanel {
         gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
         gp.moveTo(429.84, 272.11);
         gp.quadTo(446.54, 276.73, 457.90, 271.05);
-        gg.setStroke(new BasicStroke(8,BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
+        gg.setStroke(new BasicStroke(5,BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
+        gg.draw(gp);
+        
+        //right eyeball
+        gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
+        gp.moveTo(434.97, 256.39);
+        gp.quadTo(434, 263.29, 440.64, 265.45);
+        gp.quadTo(452.22, 265.97, 450.92, 254.02);
+        gp.quadTo(443.27, 252.51, 434.97, 256.39);
+        gg.fill(gp);
+        
+        //left brow
+        gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
+        gp.moveTo(329.87, 243.71);
+        gp.quadTo(354.97, 232.28, 372.81, 244.27);
+        gg.setStroke(new BasicStroke(8, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
+        gg.draw(gp);
+        
+        //right brow
+        gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
+        gp.moveTo(422.94, 243.15);
+        gp.quadTo(444.97, 229.21, 467.83, 240.08);
         gg.draw(gp);
     }
 }
