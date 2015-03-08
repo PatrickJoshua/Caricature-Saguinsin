@@ -50,6 +50,28 @@ class panel extends JPanel {
         gp.closePath();
         gg.fill(gp);
         
+        //back
+        gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
+        gp.moveTo(337,417);
+        gp.lineTo(342, 465);
+        gp.lineTo(322, 429);
+        gp.closePath();
+        gg.setColor(new Color(200,150,80));
+        gg.fill(gp);
+        
+        //neck
+        gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
+        gp.moveTo(328, 370);
+        gp.lineTo(342, 469);
+        gp.lineTo(417, 502);
+        gp.lineTo(492, 471);
+        gp.lineTo(496, 429.31);
+        gp.lineTo(480, 420.25);
+        gp.lineTo(477.55, 357.89);
+        gp.closePath();
+        gg.setColor(new Color(215,168,98));
+        gg.fill(gp);
+        
         //hair
         gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
         gp.moveTo(305, 302.37);
@@ -121,7 +143,7 @@ class panel extends JPanel {
         gp.moveTo(371.69, 258.83);
         gp.quadTo(357.97, 243.38, 332.78, 258.75);
         gg.setStroke(new BasicStroke(5));
-        gg.setColor(Color.BLACK);
+        gg.setColor(new Color(118,65,0));
         gg.draw(gp);
         /*
         //left eye bag
@@ -160,6 +182,7 @@ class panel extends JPanel {
         gp.moveTo(423.80, 260.36);
         gp.quadTo(441.92, 237.27, 469.98, 258.23);
         gg.setStroke(new BasicStroke(5));
+        gg.setColor(new Color(118,65,0));
         gg.draw(gp);
         /*
         //right eye bag
@@ -289,5 +312,29 @@ class panel extends JPanel {
         //gp.quadTo(402.90, 366.27, 367.93, 357.77);
         gg.setColor(Color.WHITE);
         gg.fill(gp);
+        
+        //shirt
+        gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
+        gp.moveTo(326, 424);
+        gp.quadTo(330, 477, 410, 488);
+        gp.quadTo(484, 498, 491, 430);
+        gp.quadTo(490, 420, 482.58, 420.85);
+        gp.quadTo(490, 413, 496, 428);
+        gp.lineTo(621, 480);
+        gp.quadTo(640, 488, 658, 507);
+        gp.quadTo(668, 520, 670, 532);
+        gp.lineTo(713, 643);
+        gp.quadTo(645, 689, 593, 694);
+        gp.lineTo(587, 800);
+        gp.lineTo(250, 800);
+        gp.lineTo(245, 678);
+        gp.quadTo(160, 672, 133, 657);
+        gp.quadTo(135, 594, 146, 546);
+        gp.quadTo(154, 513, 180, 497);
+        gp.lineTo(200, 478);
+        gp.quadTo(288, 453, 326, 424);
+        gg.setColor(new Color(255,250,77));
+        gg.fill(gp);
+        
     }
 }
