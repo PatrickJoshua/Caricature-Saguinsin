@@ -324,12 +324,13 @@ class panel extends JPanel {
         gg.setColor(new Color(240,172,65));
         gg.fill(gp);
         
-        //right arm
+        //left arm
         gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
         gp.moveTo(244.32, 698);
         gp.lineTo(250, 800);
         gp.lineTo(157, 800);
-        gp.quadTo(150, 743, 149, 664);
+        gp.quadTo(145, 743, 149, 664);
+        gp.lineTo(196, 643);
         gp.closePath();
         gg.fill(gp);
         
@@ -347,7 +348,7 @@ class panel extends JPanel {
         gp.quadTo(645, 689, 593, 694);
         gp.lineTo(587, 800);
         gp.lineTo(250, 800);
-        gp.lineTo(245, 678);
+        gp.lineTo(245, 698);
         gp.quadTo(160, 672, 133, 657);
         gp.quadTo(135, 594, 146, 546);
         gp.quadTo(154, 513, 180, 497);
