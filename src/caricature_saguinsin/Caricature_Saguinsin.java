@@ -33,6 +33,50 @@ class panel extends JPanel {
         GeneralPath gp;
         int x = 0;
         
+        //hair
+        gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
+        gp.moveTo(305, 302.37);
+        gp.quadTo(277.11, 240.53, 275.79, 228.95);
+        gp.quadTo(266.32, 183.68, 278.68, 165.79);
+        gp.quadTo(250.26, 145, 254.74, 136.84);
+        gp.quadTo(271.05, 152.11, 277.89, 150);
+        gp.quadTo(278.95, 135.26, 268.95, 128.16);
+        gp.quadTo(276, 120.79, 292, 136);
+        gp.quadTo(283, 100, 309, 90);
+        gp.quadTo(310, 104, 312.89, 100.26);
+        gp.quadTo(339, 59, 352, 59);
+        gp.quadTo(343, 69, 345, 72);
+        gp.quadTo(369, 51, 389, 58);
+        gp.quadTo(401, 62, 415, 58);
+        gp.quadTo(424, 55, 438, 73);
+        gp.quadTo(449, 60, 454, 62);
+        gp.quadTo(459, 69, 458, 75);
+        gp.quadTo(467, 62, 467.89, 65.26);
+        gp.lineTo(466, 78);
+        gp.lineTo(477, 65);
+        gp.lineTo(474, 80);
+        gp.lineTo(485.53, 67);
+        gp.quadTo(473, 92, 479, 99.21);
+        gp.quadTo(486.58, 91, 498, 96);
+        gp.lineTo(494, 107);
+        gp.lineTo(510, 103);
+        gp.quadTo(495, 114, 497, 120);
+        gp.quadTo(518, 110, 525.53, 125);
+        gp.quadTo(508, 130, 509, 135);
+        gp.quadTo(534, 136, 540, 145);
+        gp.quadTo(522.63, 147.37, 525, 152);
+        gp.quadTo(545, 159, 549, 169);
+        gp.quadTo(529, 164, 530, 169);
+        gp.lineTo(538, 180.53);
+        gp.lineTo(530, 181);
+        gp.lineTo(534, 192);
+        gp.lineTo(525, 191);
+        gp.quadTo(528, 226, 524, 249);
+        gp.quadTo(517, 272, 493, 292);
+        gp.closePath();
+        gg.setColor(Color.BLACK);
+        gg.fill(gp);
+        
         //face outline
         gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
         gp.moveTo(306, 232.35);
@@ -148,6 +192,48 @@ class panel extends JPanel {
         gp.quadTo(426.93, 362.40, 413.89, 368.99);
         gp.quadTo(399, 378.34, 381.63, 370.04);
         gp.curveTo(365.43, 362.14, 352.79, 345.94, 352.79, 345.94);
+        gg.fill(gp);
+        
+        //gums
+        gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
+        gp.moveTo(367.26, 338.98);
+        gp.lineTo(366, 359);
+        gp.lineTo(397, 366);
+        gp.lineTo(428.92, 356);
+        gp.lineTo(430, 340);
+        gp.closePath();
+        gg.setColor(new Color(188,76,12));
+        gg.fill(gp);
+        
+        //upper lip fill
+        gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
+        gp.moveTo(362.73, 340.89);
+        gp.curveTo(367.06, 336.19, 418.64, 331.86, 435.95, 338.45);
+        gp.quadTo(402.82, 351.44, 362.73, 340.89);
+        gg.setColor(new Color(160,60,0));
+        gg.fill(gp);
+        
+        //lower lip fill
+        gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
+        gp.moveTo(361.98, 355.95);
+        gp.quadTo(396.61, 369.88, 434.07, 353.13);
+        gp.quadTo(395.79, 395.02, 361.98, 355.95);
+        gg.fill(gp);
+        
+        //teeth
+        gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
+        gp.moveTo(367.93, 357.77);
+        gp.lineTo(367.93, 352.02);
+        gp.quadTo(370.26, 349.53, 370.93, 352.02);
+        gp.quadTo(372.92, 345.96, 376.90, 350.94);
+        gp.quadTo(381.88, 340.49, 385.53, 351.02);
+        gp.quadTo(390.01, 340.07, 397.97, 351.02);
+        gp.quadTo(405.02, 339.57, 407.84, 350.03);
+        gp.quadTo(413.23, 340.98, 417.71, 350.03);
+        gp.quadTo(422.69, 341.98, 425.17, 345.05);
+        gp.quadTo(427.79, 350.43, 425.92, 356.08);
+        gp.quadTo(402.90, 366.27, 367.93, 357.77);
+        gg.setColor(Color.WHITE);
         gg.fill(gp);
     }
 }
