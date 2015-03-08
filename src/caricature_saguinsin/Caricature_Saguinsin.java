@@ -126,5 +126,18 @@ class panel extends JPanel {
         gp.moveTo(422.94, 243.15);
         gp.quadTo(444.97, 229.21, 467.83, 240.08);
         gg.draw(gp);
+        
+        //nose
+        gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
+        gp.moveTo(363.85, 315);
+        gp.quadTo(368.86, 319.08, 370.57, 319.34);
+        gp.curveTo(373.47, 318.68, 376.63, 317.50, 377.81, 315.92);
+        gp.curveTo(379.13, 314.47, 386.90, 314.07, 387.69, 317.10);
+        gp.curveTo(388.87, 319.87, 394.53, 320.40, 394.53, 320.40);
+        gp.quadTo(400.20, 321.05, 403.62, 317.23);
+        gp.curveTo(404.94, 315.92, 414.55, 312.63, 418.77, 316.96);
+        gp.curveTo(420.48, 319.34, 430.62, 318.29, 430.88, 313.02);
+        gg.setStroke(new BasicStroke(1, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
+        gg.draw(gp);
     }
 }
