@@ -313,6 +313,26 @@ class panel extends JPanel {
         gg.setColor(Color.WHITE);
         gg.fill(gp);
         
+        //right arm
+        gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
+        gp.moveTo(677, 659);
+        gp.quadTo(688, 740, 682, 800);
+        gp.lineTo(594, 800);
+        gp.lineTo(589.40, 746.24);
+        gp.lineTo(591.75, 693.49);
+        gp.closePath();
+        gg.setColor(new Color(240,172,65));
+        gg.fill(gp);
+        
+        //right arm
+        gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
+        gp.moveTo(244.32, 698);
+        gp.lineTo(250, 800);
+        gp.lineTo(157, 800);
+        gp.quadTo(150, 743, 149, 664);
+        gp.closePath();
+        gg.fill(gp);
+        
         //shirt
         gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
         gp.moveTo(326, 424);
