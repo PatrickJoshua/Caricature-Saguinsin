@@ -39,7 +39,7 @@ class panel extends JPanel {
         gp.quadTo(276, 345, 312, 328);
         gp.lineTo(323, 288);
         gp.closePath();
-        gg.setColor(new Color(210,165,100));
+        gg.setColor(new Color(230,152,58));
         gg.fill(gp);
         
         //right ear
@@ -56,7 +56,7 @@ class panel extends JPanel {
         gp.lineTo(342, 465);
         gp.lineTo(322, 429);
         gp.closePath();
-        gg.setColor(new Color(200,150,80));
+        gg.setColor(new Color(220,145,50));
         gg.fill(gp);
         
         //neck
@@ -69,7 +69,7 @@ class panel extends JPanel {
         gp.lineTo(480, 420.25);
         gp.lineTo(477.55, 357.89);
         gp.closePath();
-        gg.setColor(new Color(215,168,98));
+        gg.setColor(new Color(232,154,60));
         gg.fill(gp);
         
         //hair
@@ -125,7 +125,7 @@ class panel extends JPanel {
         gp.curveTo(492.94, 208.32, 479.75, 148.87, 366.64, 156.09);     //top
         gp.curveTo(350, 158.46, 312.93, 177.09, 306, 232.35);   //upper left
         gp.closePath();
-        gg.setColor(new Color(222,173,107));
+        gg.setColor(new Color(240,162,68));    //previously 222,173,107
         gg.fill(gp);
         
         //left inner eye
