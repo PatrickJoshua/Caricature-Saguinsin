@@ -39,7 +39,7 @@ class panel extends JPanel {
         gp.quadTo(276, 345, 312, 328);
         gp.lineTo(323, 288);
         gp.closePath();
-        gg.setColor(new Color(230,152,58));
+        gg.setColor(new Color(240,162,68));
         gg.fill(gp);
         
         //right ear
@@ -69,7 +69,7 @@ class panel extends JPanel {
         gp.lineTo(480, 420.25);
         gp.lineTo(477.55, 357.89);
         gp.closePath();
-        gg.setColor(new Color(232,154,60));
+        gg.setColor(new Color(242,164,70));
         gg.fill(gp);
         
         //hair
@@ -125,7 +125,7 @@ class panel extends JPanel {
         gp.curveTo(492.94, 208.32, 479.75, 148.87, 366.64, 156.09);     //top
         gp.curveTo(350, 158.46, 312.93, 177.09, 306, 232.35);   //upper left
         gp.closePath();
-        gg.setColor(new Color(240,162,68));    //previously 222,173,107
+        gg.setColor(new Color(250,172,78));    //previously 222,173,107
         gg.fill(gp);
         
         //left inner eye
@@ -142,20 +142,22 @@ class panel extends JPanel {
         gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
         gp.moveTo(371.69, 258.83);
         gp.quadTo(357.97, 243.38, 332.78, 258.75);
-        gg.setStroke(new BasicStroke(5));
+        gg.setStroke(new BasicStroke(2));
         gg.setColor(new Color(118,65,0));
         gg.draw(gp);
-        /*
+        
         //left eye bag
         gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
-        gp.moveTo(337.99, 268.17);
+        /*gp.moveTo(337.99, 268.17);
         gp.quadTo(338.86, 275.29, 361.27, 271.47);
         gp.curveTo(372.90, 271.30, 362.14, 277.20, 349.98, 278.25);
-        gp.curveTo(327.57, 273.90, 334.17, 265.91, 337.99, 268.17);
+        gp.curveTo(327.57, 273.90, 334.17, 265.91, 337.99, 268.17);*/
+        gp.moveTo(337, 272);
+        gp.quadTo(349, 277, 363, 273);
         gg.setStroke(new BasicStroke(1));
-        gg.setColor(new Color(168,73,0));
-        gg.fill(gp);
-        */
+        gg.setColor(new Color(210,132,28));
+        gg.draw(gp);
+        
         //left eyeball
         gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
         gp.moveTo(345.95,257.47);
@@ -181,18 +183,18 @@ class panel extends JPanel {
         gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
         gp.moveTo(423.80, 260.36);
         gp.quadTo(441.92, 237.27, 469.98, 258.23);
-        gg.setStroke(new BasicStroke(5));
+        gg.setStroke(new BasicStroke(2));
         gg.setColor(new Color(118,65,0));
         gg.draw(gp);
-        /*
+        
         //right eye bag
         gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
         gp.moveTo(429.84, 272.11);
         gp.quadTo(446.54, 276.73, 457.90, 271.05);
-        gg.setStroke(new BasicStroke(5,BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
-        gg.setColor(new Color(168,73,0));
+        gg.setStroke(new BasicStroke(1,BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
+        gg.setColor(new Color(210,132,28));
         gg.draw(gp);
-        */
+        
         //right eyeball
         gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
         gp.moveTo(434.97, 256.39);
@@ -207,6 +209,7 @@ class panel extends JPanel {
         gp.moveTo(329.87, 243.71);
         gp.quadTo(354.97, 232.28, 372.81, 244.27);
         gg.setStroke(new BasicStroke(8, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
+        gg.setColor(new Color(50,0,0));
         gg.draw(gp);
         
         //right brow
@@ -241,7 +244,7 @@ class panel extends JPanel {
         gg.setStroke(new BasicStroke(5, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
         gg.setColor(new Color(162,77,1));
         gg.draw(gp);
-        /*
+        
         //nose bridge
         gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
         gp.moveTo(398.37, 259.67);
@@ -249,7 +252,18 @@ class panel extends JPanel {
         gg.setColor(new Color(255,172,85));
         gg.setStroke(new BasicStroke(10, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
         gg.draw(gp);
+        
+        //left dark nose shade
+        gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
+        gp.moveTo(386, 267);
+        gp.lineTo(368, 281);
+        gp.lineTo(363, 305);
+        gp.quadTo(377, 311, 387, 289);
+        gp.closePath();
+        gg.setColor(new Color(210,127,36));
+        gg.fill(gp);
         */
+        
         //lip fill
         gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
         gp.moveTo(352.79, 345.94);
