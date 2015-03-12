@@ -7,7 +7,11 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.geom.GeneralPath;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import javax.imageio.ImageIO;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 /**
@@ -18,7 +22,7 @@ public class Caricature_Saguinsin {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Caricature - Patrick Joshua Saguinsin");
         frame.add(new panel());
-        frame.setSize(800,800);
+        frame.setSize(1340,800);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
@@ -27,12 +31,24 @@ public class Caricature_Saguinsin {
 }
 
 class panel extends JPanel {
+    
+    BufferedImage image;
+    
+    public panel() {
+        try {
+            image = ImageIO.read(this.getClass().getResource("Caricature.png"));
+        } catch (IOException ioe) {
+            JOptionPane.showMessageDialog(this, "Cannot load original image", "Image File Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+    
     @Override
     public void paintComponent(Graphics g) {
         Graphics2D gg = (Graphics2D)g;
         gg.setRenderingHint(RenderingHints.KEY_ANTIALIASING,RenderingHints.VALUE_ANTIALIAS_ON);
         GeneralPath gp;
         int x = 0;
+        gg.drawImage(image, 750, 0, null);
         
         //left ear
         gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
@@ -447,7 +463,7 @@ class panel extends JPanel {
         gg.drawString("8", 315, 695);
         
         gg.setFont(new Font("Arial", Font.BOLD, 35));
-        gg.setColor(new Color(220,0,0));
+        gg.setColor(Color.WHITE);
         gg.drawString("O", 315, 730);
         
         gg.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -466,7 +482,7 @@ class panel extends JPanel {
         gg.drawString("113", 415, 695);
         
         gg.setFont(new Font("Arial", Font.BOLD, 35));
-        gg.setColor(new Color(220,0,0));
+        gg.setColor(Color.WHITE);
         gg.drawString("Uut", 415, 730);
         
         gg.setFont(new Font("Arial", Font.PLAIN, 12));
