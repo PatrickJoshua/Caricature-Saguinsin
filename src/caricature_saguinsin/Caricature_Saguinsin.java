@@ -20,12 +20,13 @@ import javax.swing.JPanel;
  */
 public class Caricature_Saguinsin {
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Caricature - Patrick Joshua Saguinsin");
+        JFrame frame = new JFrame("Java Vector Graphics - Patrick Joshua Saguinsin");
         frame.add(new panel());
         frame.setSize(1340,800);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
+        frame.setBackground(new Color(190,212,131));    //225,224,130
         frame.setVisible(true);
     }
 }
