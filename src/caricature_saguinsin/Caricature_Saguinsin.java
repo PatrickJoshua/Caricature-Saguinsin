@@ -2,6 +2,7 @@ package caricature_saguinsin;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
@@ -370,6 +371,111 @@ class panel extends JPanel {
         gp.quadTo(288, 453, 326, 424);
         gg.setColor(new Color(255,250,77));
         gg.fill(gp);
+        /*
+        //right armpit
+        gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
+        gp.moveTo(596, 649);
+        gp.quadTo(597.68, 680.70, 590, 679);
+        gp.lineTo(593.34, 694.31);
+        gg.setColor(Color.BLACK);
+        gg.draw(gp);
+        */
+        
+        //S
+        gg.setColor(Color.BLACK);
+        gg.fillRect(260, 550, 90, 110);
+        gg.setFont(new Font("Arial", Font.BOLD, 20));
+        gg.setColor(new Color(255,250,77));
+        gg.drawString("16", 265, 575);
+        
+        gg.setFont(new Font("Arial", Font.BOLD, 35));
+        gg.setColor(new Color(220,0,0));
+        gg.drawString("S", 265, 610);
+        
+        gg.setFont(new Font("Arial", Font.PLAIN, 12));
+        gg.setColor(new Color(255,250,77));
+        gg.drawString("Sulfur", 265, 630);
+        
+        gg.setFont(new Font("Arial", Font.PLAIN, 12));
+        gg.setColor(new Color(255,250,77));
+        gg.drawString("32.065", 265, 645);
+        
+        
+        //Ta
+        gg.setColor(Color.BLACK);
+        gg.fillRect(360, 550, 90, 110);
+        gg.setFont(new Font("Arial", Font.BOLD, 20));
+        gg.setColor(new Color(255,250,77));
+        gg.drawString("73", 365, 575);
+        
+        gg.setFont(new Font("Arial", Font.BOLD, 35));
+        gg.setColor(new Color(220,0,0));
+        gg.drawString("Ta", 365, 610);
+        
+        gg.setFont(new Font("Arial", Font.PLAIN, 12));
+        gg.setColor(new Color(255,250,77));
+        gg.drawString("Tantalum", 365, 630);
+        
+        gg.setFont(new Font("Arial", Font.PLAIN, 12));
+        gg.setColor(new Color(255,250,77));
+        gg.drawString("180.94788", 365, 645);
+        
+        //Nd
+        gg.setColor(Color.BLACK);
+        gg.fillRect(460, 550, 90, 110);
+        gg.setFont(new Font("Arial", Font.BOLD, 20));
+        gg.setColor(new Color(255,250,77));
+        gg.drawString("60", 465, 575);
+        
+        gg.setFont(new Font("Arial", Font.BOLD, 35));
+        gg.setColor(new Color(220,0,0));
+        gg.drawString("Nd", 465, 610);
+        
+        gg.setFont(new Font("Arial", Font.PLAIN, 12));
+        gg.setColor(new Color(255,250,77));
+        gg.drawString("Neodymium", 465, 630);
+        
+        gg.setFont(new Font("Arial", Font.PLAIN, 12));
+        gg.setColor(new Color(255,250,77));
+        gg.drawString("144.242", 465, 645);
+        
+        //O
+        gg.setColor(Color.BLACK);
+        gg.fillRect(310, 670, 90, 110);
+        gg.setFont(new Font("Arial", Font.BOLD, 20));
+        gg.setColor(new Color(255,250,77));
+        gg.drawString("8", 315, 695);
+        
+        gg.setFont(new Font("Arial", Font.BOLD, 35));
+        gg.setColor(new Color(220,0,0));
+        gg.drawString("O", 315, 730);
+        
+        gg.setFont(new Font("Arial", Font.PLAIN, 12));
+        gg.setColor(new Color(255,250,77));
+        gg.drawString("Oxygen", 315, 750);
+        
+        gg.setFont(new Font("Arial", Font.PLAIN, 12));
+        gg.setColor(new Color(255,250,77));
+        gg.drawString("15.9994", 315, 765);
+        
+        //Uut
+        gg.setColor(Color.BLACK);
+        gg.fillRect(410, 670, 90, 110);
+        gg.setFont(new Font("Arial", Font.BOLD, 20));
+        gg.setColor(new Color(255,250,77));
+        gg.drawString("113", 415, 695);
+        
+        gg.setFont(new Font("Arial", Font.BOLD, 35));
+        gg.setColor(new Color(220,0,0));
+        gg.drawString("Uut", 415, 730);
+        
+        gg.setFont(new Font("Arial", Font.PLAIN, 12));
+        gg.setColor(new Color(255,250,77));
+        gg.drawString("Ununtrium", 415, 750);
+        
+        gg.setFont(new Font("Arial", Font.PLAIN, 12));
+        gg.setColor(new Color(255,250,77));
+        gg.drawString("284 u", 415, 765);
         
     }
 }
