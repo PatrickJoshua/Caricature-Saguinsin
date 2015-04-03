@@ -49,7 +49,8 @@ class panel extends JPanel {
         gg.setRenderingHint(RenderingHints.KEY_ANTIALIASING,RenderingHints.VALUE_ANTIALIAS_ON);
         GeneralPath gp;
         int x = 0;
-        gg.drawImage(image, 750, 0, null);
+        gg.drawImage(image, 700, 0, null);
+        gg.translate(-50, 0);
         
         //left ear
         gp = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
